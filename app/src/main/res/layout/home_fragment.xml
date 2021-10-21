@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/day"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="동네 + 업데이트 시간"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="10dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"/>
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/weather" />
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="22도"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="10dp"
+        android:layout_margin="10dp"/>
+
+
+</LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/home_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home_mylocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 지역"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home_myteam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 팀"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home_myschdule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 일정"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

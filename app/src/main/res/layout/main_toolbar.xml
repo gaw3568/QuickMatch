@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/m_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:theme="@style/DrawerArrowStyle"/>
+
+
+    <!--메인에 콘텐츠화면 포함 (우리가 불러올 프레그먼트를 보여주는 곳)-->
+</LinearLayout>
+
+
+    <!--        android:layout_height="?attr/actionBarSize"-->

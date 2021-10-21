@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="12dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/teampage_member_image"
+            android:background="@drawable/basicprofile"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1" />
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teampage_member_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/teampage_member_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/teampage_member_foot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/teampage_member_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor"/>
+
+
+
+</LinearLayout>

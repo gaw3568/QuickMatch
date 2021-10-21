@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/invite_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/team4"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:text="팀 이름: 퀵매치"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="지역 : 서울 중랑구"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="팀 레벨 : 중"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="재미있는 축구 같이 즐겨요~"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/accept"
+        android:text="수락"
+        android:layout_marginTop="15dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.7"
+        android:background="#81ED23"/>
+
+    <Button
+        android:text="거절"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.7"
+        android:background="#ED2A23"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+
+        <ImageView
+            android:id="@+id/teampage_T_logo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teampage_T_teamname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="팀 이름"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/title"/>
+
+            <TextView
+                android:id="@+id/teampage_T_local"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="지역"
+                android:textSize="16sp"
+                android:textColor="@color/title"/>
+
+            <TextView
+                android:id="@+id/teampage_T_mNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="팀원"
+                android:textSize="16sp"
+                android:textColor="@color/title"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#777777"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/teampage_notice_recyclerview"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@drawable/login_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/l_Signup_Nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_margin="5dp"
+            android:hint="이름"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/l_Signup_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_margin="5dp"
+            android:hint="E-mail"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/l_Signup_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_margin="5dp"
+            android:inputType="textPassword|text"
+            android:hint="비밀번호"/>
+
+        <EditText
+            android:id="@+id/l_Signup_RePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_margin="5dp"
+            android:hint="비밀번호 확인"
+            android:inputType="textPassword|text"/>
+        <TextView
+            android:id="@+id/l_Signup_Warn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="비밀번호가 다릅니다."
+            android:visibility="gone"
+            android:textColor="#FF0000"/>
+
+        <EditText
+            android:id="@+id/l_Signup_Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_margin="5dp"
+            android:hint="나이"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/l_Signup_H"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_margin="5dp"
+            android:hint="키"
+            android:inputType="text"/>
+
+        <RadioGroup
+            android:id="@+id/l_Signup_RG"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/l_Signup_left"
+                android:text="왼발"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/l_Signup_both"
+                android:text="양발"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/l_Signup_right"
+                android:text="오른발"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:id="@+id/l_Signup_RG2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/l_Signup_GK"
+                android:text="골키퍼"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/l_Signup_DF"
+                android:text="수비수"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/l_Signup_MF"
+                android:text="미드필더"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/l_Signup_ST"
+                android:text="공격수"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/l_Signup_City"
+                android:text="서울"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_image"/>
+            <Button
+                android:id="@+id/l_Signup_State"
+                android:text="중랑"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_image"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/l_Signup_Success"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_image_bk"
+            android:text="회원가입"/>
+
+    </LinearLayout>
+
+</LinearLayout>

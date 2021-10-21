@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="마이메뉴">
+        <menu>
+            <item
+                android:id="@+id/n_Menu_Profile"
+                android:title="프로필" />
+
+            <item
+                android:id="@+id/n_Menu_invite"
+                android:title="초대/신청" />
+        </menu>
+    </item>
+
+
+    <item android:title="메인메뉴">
+        <menu>
+            <item
+                android:id="@+id/n_Menu_Home"
+                android:title="홈" />
+            <item
+                android:id="@+id/n_Menu_Matching"
+                android:title="매칭" />
+            <item
+                android:id="@+id/n_Menu_Team"
+                android:title="팀"/>
+            <item
+                android:id="@+id/n_Menu_Job"
+                android:title="이적시장"/>
+        </menu>
+    </item>
+
+<!--    <item android:title="Communication">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/home1"-->
+<!--                android:title="Home" />-->
+<!--            <item-->
+<!--                android:id="@+id/another1"-->
+<!--                android:title="Another Menu" />-->
+<!--        </menu>-->
+<!--    </item>-->
+</menu>

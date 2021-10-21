@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QuickMatch</string>
+    <string name="open" />
+    <string name="close" />
+    <string name="subtitle">부제목</string>
+    <string name="title"></string>
+</resources>

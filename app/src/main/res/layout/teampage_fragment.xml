@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!-- 팀페이지 텝레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:hint="팀 명을 입력하세요"
+            android:textColorHint="#FFFFFF"
+            android:background="#000000"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/teampage_teamsearch" />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/teampage_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/teampage_allteam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전체 팀" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/teampage_myteam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 팀" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/teampage_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch" />
+    </androidx.viewpager.widget.ViewPager>
+
+    <!--여기 ViewPager에 내용이 나옴-->
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/m_Drawer">
+    <!--기본 화면의 가장 큰 틀-->
+    <include
+        layout="@layout/main_toolbar" />
+    <!--메인에 툴바포함-->
+    <include
+        layout="@layout/main_content">
+    </include>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:id="@+id/m_NavigationView"
+        app:menu="@menu/navi_menu"
+        app:headerLayout="@layout/navi_profile"
+        android:layout_gravity="start"
+        android:fitsSystemWindows = "true"
+        />
+    <!--네비게이션바(우리의 메인메뉴)에 프로필(확정X), 메뉴들을 포함-->
+
+</androidx.drawerlayout.widget.DrawerLayout>

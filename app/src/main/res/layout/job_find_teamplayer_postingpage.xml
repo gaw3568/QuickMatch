@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/main_toolbar" />
+
+    <ImageView
+        android:id="@+id/profile_profileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/basicprofile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/find_teamplayer_posting_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="작성자"
+            android:fontFamily="@font/acme"/>
+
+        <TextView
+            android:id="@+id/find_teamplayer_posting_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="제목"
+            android:fontFamily="@font/acme"/>
+
+        <TextView
+            android:id="@+id/find_teamplayer_posting_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="도시"
+            android:fontFamily="@font/acme"/>
+
+        <TextView
+            android:id="@+id/find_teamplayer_posting_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="필요 포지션"
+            android:fontFamily="@font/acme"/>
+
+        <TextView
+            android:id="@+id/find_teamplayer_posting_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="내용"
+            android:fontFamily="@font/acme"/>
+
+        <TextView
+            android:id="@+id/find_teamplayer_posting_teamName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="팀 이름"
+            android:fontFamily="@font/acme"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/find_teamplayer_request"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_image_bk"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:text="팀 정보 이동"/>
+
+</LinearLayout>
